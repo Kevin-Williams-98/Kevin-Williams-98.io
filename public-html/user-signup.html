@@ -18,7 +18,7 @@
 </header>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="signup-form">
       <div class="row">
         <div class="col-lg-12">
@@ -27,42 +27,62 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
-        <img class="img-fluid" src="../images/LionKingMountain.jpg" alt="Lion King Icon" id="SULionImage">
-      </div>
-      <div class="col-lg-6">
-        <!--<img src="../images/LionLogo.png" alt="Lion King Icon" id="LionLogo">-->
-        <form action="instructor-dash.html" id="signup-form">
-          <div class="row">
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="usu-email">
-        </div>
+      <div class="col-lg-12 ">
+        <span class="border-warning">
+          <div class="p-3 mb-2 bg-dark text-white">
         <div class="row">
-          <label for="password">Password:</label>
-          <input type="text" name="password" id="usu-password">
-        </div>
-        <div class="row">
-          <label for="first">First Name:</label>
-          <input type="text" name="first" id="usu-first">
-        </div>
-        <div class="row">
-          <label for="last">Last Name:</label>
-          <input type="text" name="last" id="usu-last">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="../images/LionKingMountain.jpg" alt="Lion King Icon" id="SULionImage">
           </div>
-          <div class="row">
-          <input class="form-check-input"  type="checkbox" name="studentCheck" id="studentCheck">Student</input>
-          <input class="form-check-input" type="checkbox" name="instructorCheck" id="instructorCheck">Instructor</input>
+          <div class="col-lg-6 ">
+
+            
+              <!--<img src="../images/LionLogo.png" alt="Lion King Icon" id="LionLogo">-->
+              <form action="instructor-dash.html" id="signup-form">
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                  <label for="email">Email:</label>
+                  <input type="text" name="email" id="usu-email">
+                </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                  <label for="password">Password:</label>
+                  <input type="text" name="password" id="usu-password">
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                  <label for="first">First Name:</label>
+                  <input type="text" name="first" id="usu-first">
+                </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                  <label for="last">Last Name:</label>
+                  <input type="text" name="last" id="usu-last">
+                </div>
+                </div>
+                <div class="row justify-content-center">
+                  <input class="form-check-input" type="checkbox" name="studentCheck" id="studentCheck">Student</input>
+                  <input class="form-check-input" type="checkbox" name="instructorCheck"
+                    id="instructorCheck">Instructor</input>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Sign Up">
+                </div>
+              </form>
+
+              <form action="user-login.html">
+                <div class="row">
+                  <button type="submit">Already Have An Account</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <input type="submit" value="Sign Up">
-        </div>
-        </form>
         
-        <form action="user-login.html">
-          <div class="row">
-          <button type="submit">Already Have An Account</button>
-        </div>
-        </form>
+        </span>
       </div>
     </div>
   </div>
@@ -78,7 +98,7 @@
 <footer>
   <div class="row">
     <div class="col-lg-12">
-  This is footer info
+      This is footer info
     </div>
   </div>
 </footer>
