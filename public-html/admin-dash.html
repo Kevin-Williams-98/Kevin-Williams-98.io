@@ -3,48 +3,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
     <title>Admin Dash</title>
 </head>
 
 <header>
+
+
+
     <div class="aNav" id="aNav">
-        <img src="../images/LionLogo.png" alt="Lion King Icon" id="LionLogo">
-        <a href="admin-dash.html" class="navLink">Home</a>
-        <a href="a-classes.html" class="navLink">Classes</a>
-        <a href="a-queries.html" class="navLink">Queries</a>
-        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="row">
+                <div class="col-1">
+                    <img class="img-fluid" src="../images/LionLogo.png" alt="Lion King Icon" id="LionLogo">
+                </div>
+                <div class="col-1">
+                    <span class="navbar-text">
+                        <h2 class="text-warning">Kings College</h2>
+                    </span>
+                </div>
+                <div class="col-3">
+                    <ul class="navbar">
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                                <a href="admin-dash.html" class="navLink">Home</a>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                                <a href="a-classes.html" class="navLink">Classes</a>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                                <a href="a-queries.html" class="navLink">Queries</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </div>
 
 </header>
 
-<body>
-    <div class="Course-list-preview">
-        <table>
-            <caption>Courses</caption>
-            <tr>
-               <th>Course subject</th>
-               <th>Course number</th>
-               <th>Course Name</th>
-               <th>Course Term</th>
-               <th>Course Instructor</th>
-            </tr>
-            
+<body class="bg-warning">
+    <div class="row">
+        <div class="col-6">
+            <div class="Course-list-preview">
+                <h2 class="text-center">Course List Preview</h2>
+                <table class="table">
+                   
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Course subject</th>
+                            <th>Course number</th>
+                            <th>Course Name</th>
+                            <th>Course Term</th>
+                            <th>Course Instructor</th>
+                        </tr>
+                    </thead>
 
-            <!--Populate table based on javascript student course reply from database -->
-        </table>
+                    <!--Populate table based on javascript student course reply from database -->
+                </table>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="Query-list-preview">
+                <h2 class="text-center">Query List Preview</h2>
+                <ol>
+                    <!--Insert from database-->
+                </ol>
 
+            </div>
+
+        </div>
     </div>
-
-    <div class="Query-list-preview">
-        <ol>
-            <!--Insert from database-->
-        </ol>
-
-    </div>
-  
-  
-    
 </body>
 <footer>
 

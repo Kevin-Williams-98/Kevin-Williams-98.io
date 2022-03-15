@@ -4,51 +4,167 @@
 
 <head>
     <meta charset="utf-8">
-    <title>class info page</title>
+    <title>Class Info Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+</head>
+
 </head>
 
 <header>
     <div class="studentNav" id="StudenntNav">
-        <img src="../images/LionLogo.png" alt="Lion King Icon" id="LionLogo">
-        <a href="student-dash.html" class="navLink">Home</a>
-        <a href="class-search.html" class="navLink">Class Search</a>
-       
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="row">
+                <div class="col-1">
+                    <img class="img-fluid" src="../images/LionLogo.png" alt="Lion King Icon" id="LionLogo">
+                </div>
+                <div class="col-1">
+                    <span class="navbar-text">
+                        <h2 class="text-warning">Kings College</h2>
+                    </span>
+                </div>
+                <div class="col-3">
+                    <ul class="navbar">
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                                <a href="student-dash.html" class="nav-link navbar-light">Home</a>
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                                <a href="class-search.html" class="nav-link">Class Search</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </div>
 
 </header>
- 
-<body>
+
+<body class="bg-dark">
     <h1>Class Info</h1>
     <div class="class-info">
         <div class="">
 
         </div>
-        <div class="Term">
+        <div class=row>
+            <div class="col-4">
+                <div class="Term">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header text-center">
+                            <h1 class="card-text">Term</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            Insert class term here
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="course-name">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header text-center">
+                            <h1 class="card-text">Course Name</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            course name here
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="col-4">
+                <div class="instructors">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header text-center">
+                            <h1 class="card-text">Instructors</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            course name here
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
-        <div class="course-name">
+        <div class=row>
+
+
+            <div class="col-4">
+                <div class="subject">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header text-center">
+                            <h1 class="card-text">Subject</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            course name here
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-4">
+                <div class="course-number">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header text-center">
+                            <h1 class="card-text">Course Number</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            course name here
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="course-description">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header text-center">
+                            <h1 class="card-text">Course Description</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            course name here
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="instructors">
 
-        </div>
-        <div class="subject">
+        <div class="row">
+        <div class="col-4 offset-lg-4 ">
+            <div class="buttons">
+                <div class="card text-white bg-warning mb-3 text-center">
+                    <div class="card-header text-center">
+                        <h1 class="card-text">Apply For Course</h1>
+                    </div>
+                <!--This button changes link based on if already in course to apply for course or drop course-->
+                <form action="student-dash.html">
+                    <button class="m-5 btn btn-outline-dark"type="submit">Apply for course</button>
+                </form>
+            </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        
 
-        </div>
-        <div class="course-number">
-
-        </div>
-        <div class="course-description">
-
-        </div>
-        <div class="buttons">
-            <!--This button changes link based on if already in course to apply for course or drop course-->
-            <form action="student-dash.html">
-            <button type="submit">Apply for course</button>
-        </form>
-        </div>
+       
     </div>
-
 </body>
 <footer>
 
