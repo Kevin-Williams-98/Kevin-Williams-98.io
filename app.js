@@ -1,0 +1,31 @@
+const express = require("express");
+const PORT = process.env.PORT || 3000;
+const app = express();
+
+/*
+
+app.get("/", (request, response) => {
+  response.send("Hello World!");
+});
+
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+});
+
+*/
+// Allows us to read request body contents
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+const fs = require("fs");
+app.post("/file", (request, response) => {
+  const fileName = "../index.html";
+  fs.writeFileSync(fileName, request.body.userinput);
+  response.sendFile(fileName);
+});
+
+app.listen(3000, () => {
+  console.log("App listening on port 3000");
+});
