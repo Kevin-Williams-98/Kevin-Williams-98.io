@@ -20,10 +20,11 @@ app.use(
   })
 );
 const fs = require("fs");
-app.post("/file", (request, response) => {
+const path = require("path");
+app.get("/", (request, response) => {
   const fileName = "../index.html";
-  fs.writeFileSync(fileName, request.body.userinput);
-  response.sendFile(fileName);
+  //fs.writeFileSync(fileName, request.body.userinput);
+  response.sendFile(path.join(__dirname, "/index.html"));
 });
 
 app.listen(3000, () => {
