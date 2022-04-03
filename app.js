@@ -15,18 +15,24 @@ app.listen(PORT, () => {
 */
 // Allows us to read request body contents
 app.use(
-  express.urlencoded({
-    extended: true,
-  })
+  "/images",
+  express.static(__dirname + "/images")
+
+  //express.urlencoded({
+  //extended: true,
+  // })
 );
-const fs = require("fs");
+//const fs = require("fs");
 const path = require("path");
 app.get("/", (request, response) => {
-  const fileName = "../index.html";
+  // const fileName = "../index.html";
   //fs.writeFileSync(fileName, request.body.userinput);
-  response.sendFile(path.join(__dirname, "/index.html"));
+  response.sendFile(__dirname + "/index.html");
+
+  //response.sendFile(path.join(__dirname, "/index.html"));
 });
 
 app.listen(3000, () => {
   console.log("App listening on port 3000");
+  console.log(__dirname);
 });
