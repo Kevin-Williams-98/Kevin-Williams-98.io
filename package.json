@@ -24,8 +24,14 @@
   },
   "homepage": "https://github.com/Kevin-Williams-98/Kevin-Williams-98.io#readme",
   "dependencies": {
+    "@replit/database": "^2.0.1",
+    "body-parser": "^1.20.0",
+    "crypto-js": "^4.1.1",
+    "db.js": "^0.15.0",
     "express": "^4.17.3",
     "jquery": "^3.6.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "popper.js": "^1.16.1"
   }
 }
