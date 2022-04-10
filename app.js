@@ -7,6 +7,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const Course = require("./course.js");
 const Person = require("./person.js");
+const uri = process.env.MONGODB_URI;
 //const db=require('./db.js');
 
 console.log("This is crypto hash" + CryptoJS.SHA256("Message"));
