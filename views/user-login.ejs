@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+
+</head>
+
+<title>Kings College login EJS</title>
+<header>
+
+</header>
+
+<body class="bg-dark">
+  
+    <div class="signIn-form">
+      <div class="container p-5 h-100">
+        <div class="row">
+          <div class="col-lg-12 ">
+            <div class="card card-registration my-0">
+
+              <div class="row">
+               
+             
+
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col">
+                      <div class="card card-registration ml-4">
+                        <img class="img-fluid" src="../images/LionKingMountain.jpg" alt="Lion King Icon"
+                          id="SULionImage">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 ">
+                  <h1 class="text-center">Kings College</h1>
+                  <form action="student-dash" method="post" id="signIn-form">
+                    <div class="container-fluid justify-content-center">
+                      <div class="row justify-content-center d-inline">
+                        <div class="col-lg-12">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <label for="email">Email:</label>
+                            </div>
+                            <div class="col-lg-6">
+                              <input type="text" name="email" id="usi-email">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row justify-content-center d-inline ">
+                        <div class="col-lg-12 ">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <label for="password">Password:</label>
+                            </div>
+                            <div class="col-lg-6">
+                              <input type="text" name="password" id="usi-password">
+                            </div>
+
+                            <br /><br />
+                            <div class="col-lg-12 offset-lg-3">
+                              <input class="form-check-input" type="checkbox" name="studentCheck2" id="studentCheck2"> Student</input>&nbsp;&nbsp;&nbsp;
+                              <input class="form-check-input" type="checkbox" name="instructorCheck2" id="instructorCheck2"> Instructor</input>
+                              <br /><br />
+                           </div>
+
+
+
+                            <div class="row justify-content-center d-inline">
+                              <div class="col-lg-12">
+                                <div class="row justify-content-center">
+                                  <div class="col-lg-2 p-2">
+                                    <button type="submit" value="1" class="btn btn-outline-dark">Sign In</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                         
+                        </div>
+                        </div>
+                        </div>
+                  </form>
+                  
+
+                  <form action="user-signup">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-5 offset-lg-7">
+                            <button type="submit" class="btn btn-outline-dark">Dont Have An Account ?</button>
+                          </div>
+                        </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script>
+
+      function studentOrInstructorButtons()
+          {
+            console.log('used the function');
+             if(document.getElementById("studentCheck2").checked == true)
+             {
+                 document.getElementById("instructorCheck2").checked = false;
+                 document.getElementById("studentCheck2").value = 1;
+                 document.getElementById("instructorCheck2").value = 0;
+             }
+             else
+             {
+                 document.getElementById("studentCheck2").checked = false;
+                 document.getElementById("studentCheck2").value = 0;
+                 document.getElementById("instructorCheck2").value = 1;
+             }
+          }
+              let checkboxStudent2 = document.getElementById("studentCheck2");
+                checkboxStudent2.addEventListener('change',studentOrInstructorButtons);
+ 
+              let checkboxInstructor2 = document.getElementById("instructorCheck2");
+                checkboxInstructor2.addEventListener('change',studentOrInstructorButtons);
+   </script>
+</body>
+
+
+</html>
