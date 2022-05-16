@@ -2,13 +2,21 @@
 
 This website is a basic distance-learning remote course application for instructors to host classes.
 
-Link to actual site: ![Kings College Website](https://kings-college-remote.herokuapp.com/)
+Link to actual site: [Kings College Website](https://kings-college-remote.herokuapp.com/)
 
 All work done by me Kevin Williams
 
 List of features:
 
 -Able to log into three different portals (Student, Instructor, Admin)
+Default test logins for each :
+
+Student: email=abnerjordan@gmail.com pw=abinator5
+Instructor:email=nicowise@gmail.com pw=niconator
+
+Dont select student or instructor for admin
+Admin:email=mark.abramov@qc.cuny.edu pw=87654321
+
 -Sessions are logged
 
 Choice of front end: EJS, javascript, css, html
