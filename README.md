@@ -25,7 +25,7 @@ Choice of back-end: Node, Express
 
 Choice of database: MongoDB
 
-Currently the pages that are connected and styled are the student pages. I will need to use javascript on login to implement login into instructor portal. Site will be able to list instructor courses. Add courses. Add instructors to coursesw. Lessons to courses and students to courses. Students will be able to complete assignments on website as well.
+Currently the pages that are connected and styled are the student pages. Sign up and login is implemented. Site will be able to list instructor courses. currently working on adding courses. Add instructors to courses. Lessons to courses and students to courses. Students will be able to complete assignments on website as well.
 Initial WireFrame (5 different images)
 
 ![alt text](https://github.com/Kevin-Williams-98/Kevin-Williams-98.github.io/blob/main/WireFrameFinal-images/0001.jpg)
