@@ -25,7 +25,12 @@ const courseSchema = new Schema(
 
     instructors: {
       type: [],
-      required: false,
+      required: true,
+    },
+
+    roster: {
+      type: [],
+      required: true,
     },
   },
   { timestamps: true }

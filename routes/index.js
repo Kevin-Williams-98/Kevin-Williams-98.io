@@ -20,6 +20,7 @@ const userloginRoute = require("./user-login");
 const userSignupRoute = require("./user-signup");
 const logOutRoute = require("./logout");
 const iClassSearchRoute = require("./i-class-search");
+const addClassRoute = require("./add-class");
 module.exports = () => {
   //<----------- Serving files ------------------------------------->
   //serving index
@@ -50,5 +51,6 @@ module.exports = () => {
   router.use("/user-signup", userSignupRoute());
   router.use("/logout", logOutRoute());
   router.use("/i-class-search", iClassSearchRoute());
+  router.use("/add-class", addClassRoute());
   return router;
 };
