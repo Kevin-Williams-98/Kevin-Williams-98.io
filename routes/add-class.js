@@ -3,7 +3,7 @@ const router = express.Router();
 const Course = require("../models/course.js");
 module.exports = () => {
   //serving create course
-  router.post("/", (request, response, next) => {
+  router.post("/", (request, response) => {
     console.log(
       "This is request body in add class " + JSON.stringify(request.body)
     );

@@ -13,10 +13,11 @@
 <header>
 
     <%- include('z-i-nav') %>
-    <%= if(typeof courseStatus !== 'undefined')
-{ 
-    
-    console.log('Course status server side: '+ courseStatus);
+        <% if(typeof courseStatus !=='undefined' ) { if(courseStatus=='Course already exist' ) {console.log('Course status server side '+ courseStatus);}
+    else
+    {
+    console.log(' Course status server side: '+ courseStatus);
+    }
     
 } %>
 
@@ -31,21 +32,8 @@
             <div class="container-fluid justify-content-center">
                 <div class="row justify-content-center d-inline">
 
-
-                    <script>
-                        let james= "James forever";
-                        console.log('Regular Javascript');
-                        console.log("This is course status type "+typeof <%=courseStatus%>);
-                    if(typeof <%=courseStatus%> === 'undefined') 
-                    {
-                    let theStatus=<%=courseStatus%> ;
-                    if(theStatus=='Course already exist')
-                    {
-                        console.log('Course status: '+ theStatus);
-                         window.alert(theStatus);
-                    }
-                }
-                    </script>
+            
+                    
 
             <div class="container-fluid justify-content-center">
                 <div class="row justify-content-center d-inline">
@@ -56,7 +44,7 @@
                     </div>
                     <div class="col-lg-4">
                         <input name="term" id="term">
-                        <!--Input options based on terms listed in database --></input>
+                       </input>
                     </div>
                         </div>
                     </div>
@@ -77,7 +65,7 @@
                     </div>
                     <div class="col-lg-4">
                         <input name="subject" id="subject">
-                        <!--Javascript to populate dropdown menu from database-->
+                       
                         </input>
                         
                         </div>
@@ -97,7 +85,7 @@
                         </div>
                         <div class="col-lg-4">
                         <input name="courseName" id="courseName">
-                        <!--Javascript to populate dropdown menu  from database-->
+                       
                         </input>
                         </div>
                         </div>
@@ -116,7 +104,7 @@
                     <div class="col-lg-4">
                         <input name="courseNumber" id="courseNumber">
                     </div>
-                        <!--Javascript to populate from dropdown menu database-->
+                       
                         </input>
                     </div>
 
@@ -157,6 +145,35 @@
 
         </form>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="ejs.min.js">  </script>
+
+    <script>
+              let theStatus = '<%-courseStatus%>' 
+              if(theStatus=='Course already exist')
+              {
+          
+                console.log('Course status client side: ' + theStatus);
+                window.alert(theStatus);
+            }
+        
+        
+    </script>
+
+
+
+
 
 
 

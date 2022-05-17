@@ -19,6 +19,8 @@ Admin:email=mark.abramov@qc.cuny.edu pw=87654321
 
 -Sessions are logged
 
+-Able to create courses as an instructor
+
 Choice of front end: EJS, javascript, css, html
 
 Choice of back-end: Node, Express
